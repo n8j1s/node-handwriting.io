@@ -5,8 +5,8 @@ var Hw = require('../index.js');  // our module
 describe('Handwriting', function(){
   describe('Module Hw', function(){
   	var hw = new Hw({
-  		apiKey: '02WSERSEC5C23XW3',
-  		apiSecret: 'MBEF60EXTT10B0WC'
+  		apiKey: '',
+  		apiSecret: ''
   	});
     it('should be object', function(){
     	assert.equal(typeof hw, 'object');
