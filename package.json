@@ -1,6 +1,11 @@
 {
   "name": "handwriting.io",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "homepage": "https://github.com/n8j1s/node-hanwriting.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n8j1s/node-hanwriting.io.git"
+  },
   "description": "Node.js wrapper for handwriting.io API",
   "main": "index.js",
   "scripts": {
@@ -8,7 +13,8 @@
   },
   "keywords": [
     "handwriting.io",
-    "API"
+    "API",
+    "client"
   ],
   "author": "Nathaniel Jones (n8j1s)",
   "license": "ISC",
