@@ -1,52 +1,21 @@
-A Node.js wrapper for the handwriting.io API.
+var Hw = require('./../index');
 
-This API allows you to generate a PNG or PDF of handwritten text.
+var hw = new Hw({apiKey: '02WSERSEC5C23XW3', apiSecret: 'MBEF60EXTT10B0WC'});
 
-Requirements:
-Sign up for an account at https://handwriting.io
-Generate api key and secret
-
-
-### Installation
-
-```sh
-npm install handwriting.io
-```
-
-### Initialization:
-
-```sh
-var Hw = require('handwriting.io');
-var hw = new Hw({apiKey: 'yourkey', apiSecret: 'yoursecret'});
-```
-
-### Methods:
-
-#### Get Available Handwritings
-
-```sh
 hw.getAllHandwritings(function(err, handwritings){
 	if (err)
 		return console.log(err);
 
 	console.log('hws', handwritings);
 });
-```
 
-#### Get Individual Handwriting:
-
-```sh
-hw.getHandwriting('some id', function(err, handwriting){
+hw.getHandwriting('31SF81NG00ES', function(err, handwriting){
 	if (err)
 		return console.log(err);
 
 	console.log('hws', handwriting);
 });
-```
 
-#### Generate Png from text:
-
-```sh
 var opts = {
 	handwriting_color: '#000000',
 	handwriting_id: '2D5QW0F80001',
@@ -57,17 +26,15 @@ var opts = {
 	width: '504px'
 };
 
+/*
 hw.getPng(opts, function(err, image){
 	if (err)
 		return console.log(err);
 
-	console.log('img', image); //image binary data
+	console.log('img', image);
 });
-```
+*/
 
-#### Generate Pdf from text:
-
-```sh
 opts = {
 	handwriting_color: '#000000',
 	handwriting_id: '2D5QW0F80001',
@@ -82,13 +49,5 @@ hw.getPdf(opts, function(err, pdf){
 	if (err)
 		return console.log(err);
 
-	console.log('pdf', pdf); //pdf binary data
+	console.log('pdf', pdf);
 });
-```
-
-
-### Tests:
-
-```sh
-npm test
-```

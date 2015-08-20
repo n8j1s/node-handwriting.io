@@ -1,0 +1,22 @@
+{
+  "name": "handwriting.io",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for handwriting.io API",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "handwriting.io",
+    "API"
+  ],
+  "author": "Nathaniel Jones (n8j1s)",
+  "license": "ISC",
+  "dependencies": {
+    "qs": "^4.0.0",
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
